@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+    <!-- this is the search section -->
+    <div class="card">
+        <div class="search">
+            <input type="text" id="city-input" placeholder="Enter city name" spellcheck="false">
+            <button>
+                <img src="img/search.png" alt="searchbtn">
+            </button>
+        </div>
+        
+        <!-- this is the error message section -->
+        <div class="error">
+            <p>City not found. Please try again.</p>
+        </div>  
+
+        <!-- this is the weather information section -->
+        <div class="weather">
+            <img src="img/rain.png" class="weather-icon" alt="weather-icon">
+
+            <h1 class="temperature">25°C</h1>
+            <h2 class="city">City</h2>
+            <p class="condition">Clouds</p>
+
+            <!-- this is the details section -->
+            <div class="details">
+                <!-- this is the humidity section -->
+                <div class="col">
+                    <img src="img/humidity.png" alt="">
+                    <div>
+                        <p class="humidity">60%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <!-- this is the wind speed section -->
+                <div class="col">
+                    <img src="img/wind.png" alt="">
+                    <div>
+                        <p class="wind">10 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src = "config.js"></script>  
+    <script src ="script.js"></script>
+
+</body>
+</html>
